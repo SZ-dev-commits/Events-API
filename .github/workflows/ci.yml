@@ -41,7 +41,7 @@ jobs:
 
       - name: Run tests
         run: |
-          pytest -v
+          PYTHONPATH=. python -m pytest -v tests/
 
       - name: Clean up container
         if: always()
